@@ -6,36 +6,41 @@
 ![array func](assets/images/arrayFunc.png)
 
 
+
+## Es6 最新数组方法  
+
 `var colors = ['red','blue','black','green','skyblue']`
 
-**ES5 遍历数组方法**
- ```javascipt  
- for(var i=0;i<colors.length;i++){
-     console.log(colors[i])
-}
-```  
+* **ES6 forEach**
+  ```javascript
+  colors.forEach(function(color){
+      console.log(color)
+  })
+  ```  
+* ES5 遍历数组方法
+  ```javascipt
+   for(var i=0;i<colors.length;i++){
+       console.log(colors[i])
+  }
+  ```  
 
-**ES6 forEach**
-```javascript
-colors.forEach(function(color){
-    console.log(color)
-})
-```  
+  **练习： 遍历数组中的值，并计算总和**
+  ```javascript
+  var numbers = [1,2,3,4,5]
 
-**练习： 遍历数组中的值，并计算总和**
-```javascript
-var numbers = [1,2,3,4,5]
+  sum = 0;
 
-sum = 0;
+  function adder(number){ sum += number };
+  numbers.forEach(adder);
 
-function adder(number){ sum += number };
-numbers.forEach(adder);
-
-console.log(sum)
-```  
+  console.log(sum)
+  ```  
 
 **假定有一个数值数组(A),将A数组中的值以双倍的形式放到B数组**  
 
+---
+
+* **Es6 map**
 ```javascript
 var numbers = [1,2,3];
 
