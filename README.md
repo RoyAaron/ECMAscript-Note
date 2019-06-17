@@ -1,13 +1,13 @@
+# ECMAscript study
 
 ![ECMA](assets/images/ECMA.png)
 兼容各个浏览器的解决方案
 ![ECMA](assets/images/ECMA_b.png)
-## 数组方法
-![array func](assets/images/arrayFunc.png)
 
 
 
 ## Es6 最新数组方法  
+![array func](assets/images/arrayFunc.png)
 
 `var colors = ['red','blue','black','green','skyblue']`
 
@@ -17,7 +17,7 @@
       console.log(color)
   })
   ```  
-* ES5 遍历数组方法
+* ES5
   ```javascipt
    for(var i=0;i<colors.length;i++){
        console.log(colors[i])
@@ -36,50 +36,50 @@
   console.log(sum)
   ```  
 
-**假定有一个数值数组(A),将A数组中的值以双倍的形式放到B数组**  
 
 ---
 
-* **Es6 map**
-```javascript
-var numbers = [1,2,3];
+* **Es6 map 方法**
+**假定有一个数值数组(A),将A数组中的值以双倍的形式放到B数组**  
+  ```javascript
+  var numbers = [1,2,3];
 
-var doubledNumbers = [];
+  var doubledNumbers = [];
 
-// Es 5
-for(var i=0;i<numbers.length;i++){
-    doubledNumbers.push(numbers[i]*2)
-}
-
-console.log(doubledNumbers)
-
-
-// Es 6
-var doubled = numbers.map(function(number){
-    return number*2
-})
-
-console.log(doubled)
-
-doubled.forEach(function(number){
-    console.log(number)
-})
-```
+  // Es 5
+  for(var i=0;i<numbers.length;i++){
+      doubledNumbers.push(numbers[i]*2)
+  }
+  
+  console.log(doubledNumbers)
 
 
-**假定有一个对象数组(A),将A数中对象某个属性的值存储到B数组中**  
-```javascript
-var cars = [
-    {model:'Buick',price:'CHEAP'},
-    {model:'BMW',price:'expensive'}
-]
+  // Es 6
+    var doubled = numbers.map(function(number){
+        return number*2
+    })
 
-var prices = cars.map(function(car){
-    // return car['price'];
-    return car.price;
-})
+    console.log(doubled)
 
-console.log(prices)
-```
+    doubled.forEach(function(number){
+        console.log(number)
+    })
+    ```
 
-![map working](assets/images/map_working.png)
+
+    **假定有一个对象数组(A),将A数中对象某个属性的值存储到B数组中**  
+    ```javascript
+    var cars = [
+        {model:'Buick',price:'CHEAP'},
+        {model:'BMW',price:'expensive'}
+    ]
+
+    var prices = cars.map(function(car){
+        // return car['price'];
+        return car.price;
+    })
+
+    console.log(prices)
+    ```
+
+    ![map working](assets/images/map_working.png)
